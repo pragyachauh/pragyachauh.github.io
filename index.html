@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script defer src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Drinks</h1>
+            <div class="mini-navbar">
+                <span class="material-symbols-outlined" style="font-size:10vh" onclick="toggleMenu('coffeeMenu', this)">coffee_maker</span>
+                <span class="material-symbols-outlined" style="font-size:10vh" onclick="toggleMenu('teaMenu', this)">emoji_food_beverage</span>
+                <hr class ="handwritten-hr">
+
+                <div id="coffeeMenu" class="menu">
+                    <ul class ="coffee-drinks">
+                        <li>latte<span class="price">$3.50</span> </li>
+                        <li>cappuccino <span class="price">$4.00</span></li>
+                        <li>mocha <span class="price">$4.50</span></li>
+                        <li>cortado<span class="price">$3.00</span></li>
+                        <li>macchiato <span class="price">$3.50</span></li>
+                    </ul>
+                </div>
+
+                <div id="teaMenu" class="menu">
+                    <ul class ="tea-drinks">
+                        <li>earl grey<span class="price">$3.50</span> </li>
+                        <li>jasmine<span class="price">$4.50</span></li>
+                        <li>ginger lemon <span class="price">$3.00</span></li>
+                        <li>imperial milk<span class="price">$5.00</span></li>
+                        <li>raspberry<span class="price">$3.50</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

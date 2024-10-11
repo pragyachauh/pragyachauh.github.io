@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Syne+Mono&display=swap");
+.material-symbols-outlined.active,
+.material-symbols-outlined:hover {
+  color: #f5658b;
+  transition: color 0.2s ease-in-out;
+}
+
+.container {
+  height: 100vh;
+  width: 75vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(45deg, #74e1b5, #D0F5BE);
+  border-radius: 3vh;
+}
+
+.container h1 {
+  color: #2b4243;
+  font-family: Borel;
+  font-size: 6vh;
+  margin-bottom: 82vh;
+}
+
+.container h1:hover {
+  color: #f5658b;
+  transition: color 0.2s ease-in-out;
+}
+
+.mini-navbar {
+  color: #2b4243;
+  position: absolute;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 1vh;
+  margin-right: 2vh;
+  top: 17vh;
+}
+
+.menu {
+  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.menu.active {
+  display: block;
+  opacity: 1;
+  height: auto;
+}
+
+.menu li {
+  margin-right: 27vh;
+  margin-top: 5vh;
+  background-color: #E3FCBF;
+  font-family: Syne Mono;
+  font-weight: bold;
+  font-size: 3.5vh;
+  list-style: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.menu li:hover {
+  background-color: #f5658b;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu.active li {
+  margin-right: 27vh;
+  margin-top: 5vh;
+  background-color: #E3FCBF;
+  font-family: Syne Mono;
+  font-weight: bold;
+  font-size: 3.5vh;
+  list-style: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#coffeeMenu,
+#teaMenu {
+  display: none;
+}
+
+#coffeeMenu.active,
+#teaMenu.active {
+  display: block;
+  opacity: 1;
+  height: auto;
+}
+
+#coffeeMenu.active li,
+#teaMenu.active li {
+  margin-right: 27vh;
+  margin-top: 5vh;
+  background-image: #E3FCBF;
+  font-family: Syne Mono;
+  font-weight: bold;
+  font-size: 3.5vh;
+  list-style: none;
+  transition: background-image 0.5s ease-in-out;
+}
+
+#coffeeMenu {
+  opacity: 1;
+}
+
+.coffee-drinks, .tea-drinks {
+  list-style: none;
+  padding: 0;
+}
+
+.coffee-drinks li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27vh;
+  margin-bottom: 7vh;
+}
+
+.coffee-drinks li span.price {
+  text-align: right;
+  margin-left: 17vh;
+}
+
+.tea-drinks li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27vh;
+  margin-bottom: 3vh;
+}
+
+.tea-drinks li span.price {
+  text-align: right;
+  margin-left: 17vh;
+}
+
+.handwritten-hr {
+  border: none;
+  height: 6vh;
+  width: 65vh;
+  background: url(green-underline-transparent.png) repeat-x center;
+  margin-top: 1vh auto;
+}/*# sourceMappingURL=style.css.map */
